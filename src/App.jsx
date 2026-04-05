@@ -1,16 +1,16 @@
 import './App.css'
 import Banner from './Components/Banner'
 import Navbar from './Components/Navbar'
+import ProductSection from './Components/ProductSection'
 import Stats from './Components/Stats'
 
 const getProducts = async () => {
-  const res = await fetch("/models.json");
-  console.log(getProducts)
+  const res = await fetch("/models.json"); 
   return res.json()
 }
 
 const productPromise = getProducts()
-console.log(productPromise)
+
 function App() {
 
   return (
@@ -19,10 +19,10 @@ function App() {
 
         <Navbar></Navbar>
 
-          <Banner></Banner>
-          <Stats></Stats>
-            
-        
+        <Banner></Banner>
+        <Stats></Stats>
+        <ProductSection productPromise ={productPromise}></ProductSection>
+
       </div>
     </>
   )
