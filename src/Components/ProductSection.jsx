@@ -20,8 +20,6 @@ const ProductSection = ({ productPromise }) => {
                     <ProductCard
                         key={product.id}
                         product={product}
-                        // carts={carts}
-                        // setCarts={setCarts}
                     ></ProductCard>
                 ))}
             </div>

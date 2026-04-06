@@ -2,7 +2,9 @@ import { Check } from 'lucide-react';
 import React from 'react';
 
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product}) => {
+    
+
     const tagStyles = {
         "best seller": "bg-[#FEF3C6] text-[#BB4D00]",
         popular: "bg-blue-100 text--600 text-[#9514FA]",
@@ -57,10 +59,9 @@ const ProductCard = ({ product }) => {
                     </div>
                 ))}
             </div>
-            <button
-                onClick={handleAddCart}
+            <button                
                 className="btn bg-linear-130 from-violet-800 to-purple-500 hover:bg-[#6D28D9] text-white border-none rounded-full px-10 h-16 font-bold capitalize text-xl shadow-lg shadow-purple-200 w-full sm:w-auto transition-all duration-300 transform hover:scale-105">
-                Explore Products
+                Buy Now
             </button>
         </div>
     );
