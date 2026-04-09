@@ -1,11 +1,14 @@
 import { Check } from 'lucide-react';
 import React, { useState } from 'react';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, cart, setCart }) => {
     const [isBuyed, setIsBuyed] = useState(false);
+
     const handleBuy = () =>{
-        setIsBuyed(true)
+        setIsBuyed(true);
+        setCart([...cart, product]);
     }
+
     const tagStyles = {
         "best seller": "bg-[#FEF3C6] text-[#BB4D00]",
         popular: "bg-blue-100 text--600 text-[#9514FA]",

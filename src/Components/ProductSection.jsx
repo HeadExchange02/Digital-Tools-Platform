@@ -1,9 +1,9 @@
 import React, { use } from 'react';
 import ProductCard from './ProductCard';
 
-const ProductSection = ({ productPromise }) => {
+const ProductSection = ({ productPromise, cart, setCart }) => {
     const products = use(productPromise);
-    console.log(products)
+
     return (
         <div className="py-16 max-w-7xl mx-auto px-4">
             <div className="text-center mb-6">
@@ -18,7 +18,7 @@ const ProductSection = ({ productPromise }) => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {products.map((product) => (
 
-                    <ProductCard key={product.id} product={product}></ProductCard>
+                    <ProductCard key={product.id} product={product} cart={cart} setCart={setCart}></ProductCard>
                 
                 ))}
             </div>
