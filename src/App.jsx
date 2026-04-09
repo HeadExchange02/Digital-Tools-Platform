@@ -5,6 +5,7 @@ import Cart from './Components/Cart'
 import Navbar from './Components/Navbar'
 import ProductSection from './Components/ProductSection'
 import Stats from './Components/Stats'
+import Footer from './Components/Footer'
 
 
 const getProducts = async () => {
@@ -35,7 +36,7 @@ function App() {
 
         {activeTab === "product" && <ProductSection productPromise={productPromise} cart={cart} setCart={setCart}></ProductSection>}
         {activeTab === "cart" && <Cart key={productPromise.id} cart={cart} setCart={setCart}></Cart>}
-
+        <Footer></Footer>
       </div>
     </>
   )
