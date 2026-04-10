@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar'
 import ProductSection from './Components/ProductSection'
 import Stats from './Components/Stats'
 import Footer from './Components/Footer'
+import Steps from './Components/Steps'
 
 
 const getProducts = async () => {
@@ -42,6 +43,7 @@ function App() {
           </>
         )}
         {activeTab === "cart" && <Cart key={productPromise.id} cart={cart} setCart={setCart}></Cart>}
+        <Steps></Steps>
         <Footer></Footer>
       </div>
     </>
