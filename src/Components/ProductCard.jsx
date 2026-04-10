@@ -15,7 +15,7 @@ const ProductCard = ({ product, cart, setCart }) => {
         new: "bg-green-100 text-green-600",
     };
     return (
-        <div className='card card-body border border-slate-200 rounded-3xl shadow-2xl'>
+        <div className='card card-body border border-slate-200 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300'>
 
             {/* Tag */}
             <div
