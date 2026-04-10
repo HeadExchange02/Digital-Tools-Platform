@@ -16,7 +16,7 @@ const Cart = ({ cart, setCart }) => {
     }
     return (
         <div className='w-8/12 mx-auto mt-6 space-y-3 mb-3'>
-            <h1 className='text-2xl text-center font-semibold '>Cart</h1>
+            <h1 className='text-2xl text-center font-semibold text-violet-500'>Cart - {cart.length}</h1>
             <div className='space-y-6 border border-violet-300 rounded-2xl p-5'>
 
                 {

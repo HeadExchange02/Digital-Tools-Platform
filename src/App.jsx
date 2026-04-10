@@ -23,7 +23,7 @@ function App() {
     <>
       <div>
 
-        <Navbar></Navbar>
+        <Navbar cartCount={cart.length}></Navbar>
         <Banner></Banner>
         <Stats></Stats>
 
@@ -31,7 +31,7 @@ function App() {
         <div>
           <div className="tabs tabs-box justify-center bg-transparent">
             <input type="radio" name="my_tabs_1" className="tab rounded-full font-semibold w-40" aria-label="Products" onClick={() => setActiveTab("product")} defaultChecked />
-            <input type="radio" name="my_tabs_1" className="tab rounded-full font-semibold w-40" aria-label="Cart" onClick={() => setActiveTab("cart")} />
+            <input type="radio" name="my_tabs_1" className="tab rounded-full font-semibold w-40" aria-label={`Cart (${cart.length})`} onClick={() => setActiveTab("cart")} />
           </div>
         </div>
 
