@@ -1,16 +1,40 @@
-# React + Vite
+# 🚀 DigiTools — Digital Tools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## 📌 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+DigiTools is a modern, minimal, and user-friendly web platform for discovering and purchasing premium digital products such as AI writing tools, design templates, and productivity software.
 
-## React Compiler
+This project was built to simulate a real-world eCommerce experience, with a strong emphasis on performance, usability, and clean UI/UX design.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+The project is built using a modern frontend stack:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React.js — Component-based architecture for fast and dynamic UI
+Tailwind CSS — Utility-first styling for rapid and responsive design
+DaisyUI — Pre-built UI components (buttons, navbar, etc.)
+Google Fonts (Manrope) — Clean and professional typography
+
+## ✨ Key Features
+
+📱 Fully Responsive
+
+Optimized for all devices — mobile, tablet, and desktop — ensuring a seamless experience across screen sizes.
+
+🛒 Interactive Cart System
+Add products to cart dynamically
+Real-time UI updates
+Toast notifications for user feedback (via Toastify)
+🎨 Modern SaaS-Style Design
+Sticky navigation bar
+Custom icons and refined UI elements
+Clean layout with premium typography
+
+## ⚙️ How to Run it Locally
+
+If you want to check out the code on your own machine:
+
+1. Clone the repo.
+2. Run `npm install` to get the dependencies.
+3. Run `npm run dev` to start the project.
