@@ -12,7 +12,8 @@ const Cart = ({ cart, setCart }) => {
 
     const handleDelete = (item) => {
         const filterArray = cart.filter(c => c.id !== item.id)
-        setCart(filterArray)
+        setCart(filterArray);
+        toast.success("Tool Removed from Cart")
     }
     return (
         <div className='w-8/12 mx-auto mt-6 space-y-3 mb-3'>
